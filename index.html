@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+
+</head>
+<body>
+  <div id="login-form" class="login-form">
+    <h2>Login</h2>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+    <div class="form-group">
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <script>
+
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "password") {
+        console.log("Login successful!");
+        // Tambahkan kode untuk tindakan setelah login berhasil di sini
+      } else {
+        console.log("Login failed. Invalid username or password.");
+        // Tambahkan kode untuk tindakan setelah login gagal di sini
+      }
+    }
+  </script>
+</body>
+</html>
+
